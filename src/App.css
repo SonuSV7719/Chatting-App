@@ -114,6 +114,12 @@ img {
     border-top-left-radius: 1000px;
     float: left;
   }
+
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   .sendMsg {
     position: fixed;

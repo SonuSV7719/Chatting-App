@@ -4,6 +4,7 @@ import SignOut from './SignOut'
 import { db, auth } from '../firebase-config'
 import { collection, orderBy, query, limit, onSnapshot } from 'firebase/firestore'
 import notification from '../static/notification.mp3'
+import DeleteChat from './DeleteChat'
 
 
 function Chat() {
@@ -37,7 +38,11 @@ function Chat() {
  
     return (
         <>
+            <div className='buttons'>
             <SignOut />
+            <DeleteChat />
+            </div>
+            
 
             <div className="msgs">
                 {chat.map(({ id, text, photoURL, uid }) => (
